@@ -1,10 +1,11 @@
+
 body {
+    margin: 0;
+    padding: 2rem 0;
+    width: 100%;
     background: rgb(144, 202, 188);
     font-family: 'Inconsolata', monospace;
     text-align: center;
-    margin: 0;
-    padding: 2rem 0;
-    width : 100%;
 }
 main {
     background: white;
@@ -26,4 +27,42 @@ main {
     flex-flow: row wrap;
     justify-content: center;
     align-items: flex-start;
+}
+h2 {
+    display: block;
+    font-size: 1.5em;
+    margin-block-start: 0.83em;
+    margin-block-end: 0.83em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+}
+h3 {
+    display: block;
+    font-size: 1.17em;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+}
+p {
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+section {
+    display: block;
+}
+html {
+    color: -internal-root-color;
+}
+.comment {
+    margin: 1rem auto;
+    border: 1px solid black;
+    border-radius: 5px;
+    max-width: 50%;
+    min-width: 15rem;
 }
