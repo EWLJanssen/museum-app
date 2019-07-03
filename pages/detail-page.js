@@ -14,6 +14,11 @@ function submitComment(){
     comment.appendChild(h3)
     comment.appendChild(p)
   
-    console.log(comment)
+  // display the elements on the page
+  const commentSection = document.getElementById('comments')
+  commentSection.appendChild(comment)
 
+  // reset form values
+  inputField.value = null
+  textArea.value = null
 }
