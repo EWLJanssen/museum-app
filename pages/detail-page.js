@@ -22,3 +22,25 @@ function submitComment(){
   inputField.value = null
   textArea.value = null
 }
+function doesNotPassAllValidations(name, msg) {
+    if (!name || !msg) {
+      alert('You forgot to fill in your name or message!')
+      return true;
+    }
+  
+    if(msg.length > 280) {
+      alert('Your comment is too long')
+      return true
+    }
+  
+    return false
+  }
+  
+  function submitComment() {
+    // ... gather data logic ..
+  
+    // check if user input passes validations
+    if(doesNotPassAllValidations(name, msg)){
+      return null
+    }
+}
