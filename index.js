@@ -329,7 +329,7 @@ function displayPainting(painting){
   if (painting.webImage.width < 2000 || painting.principalOrFirstMaker === 'Gerard van Honthorst'){
     return null;
   }
-  
+
   const gallery = document.getElementById('gallery')
   const link = "./pages/detail-page.html"
 
@@ -351,3 +351,13 @@ for(let i = 0; i < paintings.length; i++){
   const currentPainting = paintings[i]
   displayPainting(currentPainting)
 }
+
+function showRembrandt(painting) {
+    console.log(paintings[2].principalOrFirstMaker)
+    if (painting.principalOrFirstMaker !== 'Rembrandt van Rijn'){
+        return null;
+
+    }
+
+}
+
